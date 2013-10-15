@@ -1,0 +1,27 @@
+<head>
+  <title>iDoneThis</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Track, Share your Status">
+  <meta name="author" content="Ravi"></head>
+<body>
+
+  <div class="wrap">
+    <div class="topBar"></div>
+    <div class="container">
+      {{> header}}
+      <div class="hero-unit space-above">
+        <div id="main" class="row-fluid">
+          {{{renderPage}}}
+        </div>
+      </div>
+      <div class="push"></div>
+    </div>
+  </div>
+
+  <div class="footer text-center">
+    <div class="container">
+      <p class="muted credit">Powered by <a href="http://www.meteor.com/">Meteor.js</a>, Created by <a href="http://ravi.net.in">Ravi</a>.</p>
+    </div>
+  </div>
+</body>

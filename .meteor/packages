@@ -8,3 +8,6 @@ preserve-inputs
 router
 HTML5-History-API
 bootstrap
+coffeescript
+accounts-google
+accounts-ui
