@@ -7,7 +7,6 @@ Template.calendar.rendered = ()->
     weekends:true,
     editable:true,
     selectable: true,
-    complete: () -> alert ('complete'),
     dayClick: (date, allDay, jsEvent, view)->
       Session.set 'selectedDate', date
       Session.set 'dataState', {isFetching: true}
@@ -17,3 +16,4 @@ Template.calendar.rendered = ()->
         Session.set 'dataState', if err then {isError: true} else {isFetched: true}
         Session.set 'selectedDate', date
         Session.set 'status', data?.status
+        Session.set 'editable', data?.editable

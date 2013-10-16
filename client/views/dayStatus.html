@@ -20,14 +20,25 @@
 <template name="oldOrNewStatus">
   <div class="span12">
     {{#if this.status}}
-        {{this.status}}
+      {{> editableStatus}}
     {{else}}
       {{> newStatus}}
     {{/if}}
   </div>
 </template>
 
+<template name="editableStatus">
+  <div class="statusDiv field span12">
+    {{{this.htmlStatus}}}
+  </div>
+  <textarea class="editedStatusArea hide field span12" name="editedStatus" rows="6">{{this.status}}</textarea>
+  {{#unless this.editable}}
+    <input class="editStatusBtn btn btn-primary" value="Edit" type="submit" />
+    <input class="updateStatusBtn hide  btn btn-primary" value="Update" type="submit" />
+  {{/unless}}
+</template>
+
 <template name="newStatus">
   <textarea class="status field span12" name="newStatus" rows="6" placeholder="Enter you Status here" />
-  <input class="addStatus btn btn-primary" name="Submit" type="submit" />
+  <input class="addStatus btn btn-primary" value="Add" type="submit" />
 </template>

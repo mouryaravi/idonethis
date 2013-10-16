@@ -13,5 +13,15 @@ Meteor.methods
       date: statusObj.date
       userId: Meteor.userId()
       status: statusObj.status
+      editable: true
       createdAt: new Date()
       modifiedAt: new Date()
+
+  updateStatus: (statusObj)->
+    console.log 'updating status for ', statusObj
+    Status.update(
+      { date: statusObj.date, userId: Meteor.userId() },
+      { $set: {status: statusObj.status, modifiedAt: new Date()} },
+    )
+      
+
