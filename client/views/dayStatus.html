@@ -1,3 +1,33 @@
 <template name="dayStatus">
-  {{status}}
+  {{#with statusData}}
+    <div class="row-fluid date">
+      {{date}}
+    </div>
+    <hr class=""/>
+    {{#if dataState.isError}}
+      {{> error}}
+    {{/if}}
+    {{#if dataState.isFetching}}
+      {{> spinner}}
+    {{else}}
+      {{#if dataState.isFetched}}
+        {{> oldOrNewStatus}}
+      {{/if}}
+    {{/if}}
+  {{/with}}
+</template>
+
+<template name="oldOrNewStatus">
+  <div class="span12">
+    {{#if this.status}}
+        {{this.status}}
+    {{else}}
+      {{> newStatus}}
+    {{/if}}
+  </div>
+</template>
+
+<template name="newStatus">
+  <textarea class="status field span12" name="newStatus" rows="6" placeholder="Enter you Status here" />
+  <input class="addStatus btn btn-primary" name="Submit" type="submit" />
 </template>

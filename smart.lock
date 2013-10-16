@@ -4,7 +4,9 @@
     "basePackages": {
       "router": {},
       "accounts-ui-bootstrap-dropdown": {},
-      "supercalendar": {}
+      "supercalendar": {},
+      "fullcalendar": {},
+      "spin": {}
     },
     "packages": {
       "router": {
@@ -22,6 +24,16 @@
         "tag": "v0.1.2c",
         "commit": "9acf2533fde2e4d0bf4bdcc10404cd471bc0054c"
       },
+      "fullcalendar": {
+        "git": "https://github.com/TimHeckel/meteor-fullcalendar.git",
+        "tag": "v1.6.1",
+        "commit": "78dba7c564bf7baacf6556c70a3cc179d0e137c4"
+      },
+      "spin": {
+        "git": "https://github.com/SachaG/meteor-spin.git",
+        "tag": "v0.2.0",
+        "commit": "fd3a2871a69442848b4b4e74f5e1ae28fa4a95a4"
+      },
       "page-js-ie-support": {
         "git": "https://github.com/tmeasday/meteor-page-js-ie-support.git",
         "tag": "v1.3.5",
@@ -36,6 +48,11 @@
         "git": "https://github.com/copleykj/Mesosphere.git",
         "tag": "v0.1.1",
         "commit": "0873e449f7cabb58986b05c9d2b7b3b64bd19a9f"
+      },
+      "jquery-ui": {
+        "git": "https://github.com/TimHeckel/meteor-jquery-ui.git",
+        "tag": "v1.9.2",
+        "commit": "c437d45edcf1367df8d5ffa8bad2867758030bd2"
       },
       "underscore-string": {
         "git": "https://github.com/possibilities/meteor-underscore-string.git",

@@ -11,3 +11,5 @@ bootstrap
 coffeescript
 accounts-google
 accounts-ui
+fullcalendar
+spin
