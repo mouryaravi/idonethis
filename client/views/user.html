@@ -1,3 +1,10 @@
 <template name="user">
-  {{> calendar}}
+  <div class="row-fluid">
+    <div id="calendar-sub" class="span6">
+      {{> calendar}}
+    </div>
+    <div id="day-status" class="span4 offset1">
+      {{#isolate}}{{> dayStatus}}{{/isolate}}
+    </div>
+  </div>
 </template>
