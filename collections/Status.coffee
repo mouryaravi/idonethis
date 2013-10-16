@@ -2,15 +2,15 @@
 
 Meteor.methods
   getStatus: (date)->
-    console.log 'Searching for user, ', Meteor.userId(), ', date, ', date
+    console.log 'Searching for user, ', Meteor.userId(), ', date, ', date.toDateString()
     Status.findOne
       userId: this.userId
-      date: date
+      date: new Date(date).toDateString()
 
   addStatus: (statusObj)->
     console.log 'adding status for ', statusObj
     Status.insert 
-      date: statusObj.date
+      date: new Date(statusObj.date).toDateString()
       userId: Meteor.userId()
       status: statusObj.status
       editable: true
@@ -20,7 +20,7 @@ Meteor.methods
   updateStatus: (statusObj)->
     console.log 'updating status for ', statusObj
     Status.update(
-      { date: statusObj.date, userId: Meteor.userId() },
+      { date: new Date(statusObj.date).toDateString(), userId: Meteor.userId() },
       { $set: {status: statusObj.status, modifiedAt: new Date()} },
     )
       
