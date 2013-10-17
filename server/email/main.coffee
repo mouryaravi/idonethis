@@ -24,7 +24,6 @@ class @StatusEmail
   sendEmail: ()->
     users = Meteor.users.find({'group': 'qa'})
     userIds = _.map users.fetch(), (user)=>
-      console.log  'user: ', user
       userIdMap[user._id + ''] = user.profile
       user._id
 
@@ -36,8 +35,8 @@ class @StatusEmail
     htmlStatusList = @buildHtmlStatusList status
 
     Email.send
-      to: 'xxxx@gmail.com',
-      from: 'xxx@gmail.com',
+      to: 'ravi@pentaur.com',
+      from: 'status-tracker@pentaur.com',
       subject: 'QA: Status for ' + new Date().toDateString()
       html: Handlebars.templates['status-email']({date: new Date().toDateString(), statusList: htmlStatusList})
       text: textStatus
