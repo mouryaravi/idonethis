@@ -30,9 +30,9 @@
           scheduledTime.set('hour', arr[0])
           scheduledTime.set('minute', arr[1])
           scheduledTime.set('second', arr[2])
-        console.log "Next email schedule time: ", scheduledTime.toDate()
         if moment().isAfter scheduledTime
           scheduledTime = scheduledTime.add 'd', 1
+        console.log "Next email schedule time: ", scheduledTime.toDate()
         scheduledTime
 
   }
