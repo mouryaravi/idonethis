@@ -1,9 +1,10 @@
 {
   "packages": {
     "router": {},
-    "accounts-ui-bootstrap-dropdown": {},
-    "supercalendar": {},
     "fullcalendar": {},
-    "spin": {}
+    "spin": {},
+    "moment": {},
+    "collection2": {},
+    "handlebars-server": {}
   }
 }

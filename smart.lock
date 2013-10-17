@@ -3,26 +3,17 @@
   "dependencies": {
     "basePackages": {
       "router": {},
-      "accounts-ui-bootstrap-dropdown": {},
-      "supercalendar": {},
       "fullcalendar": {},
-      "spin": {}
+      "spin": {},
+      "moment": {},
+      "collection2": {},
+      "handlebars-server": {}
     },
     "packages": {
       "router": {
         "git": "https://github.com/tmeasday/meteor-router.git",
         "tag": "v0.5.4.1",
         "commit": "d00e380dda2184b70e909fc4a0fb5358d602c586"
-      },
-      "accounts-ui-bootstrap-dropdown": {
-        "git": "https://github.com/erobit/meteor-accounts-ui-bootstrap-dropdown.git",
-        "tag": "v0.6.5.1",
-        "commit": "c8b29d2e7f8611d6dec9d6d23c1c2b94e000b0fb"
-      },
-      "supercalendar": {
-        "git": "https://github.com/gabrielhpugliese/meteor_supercalendar",
-        "tag": "v0.1.2c",
-        "commit": "9acf2533fde2e4d0bf4bdcc10404cd471bc0054c"
       },
       "fullcalendar": {
         "git": "https://github.com/TimHeckel/meteor-fullcalendar.git",
@@ -34,6 +25,21 @@
         "tag": "v0.2.0",
         "commit": "fd3a2871a69442848b4b4e74f5e1ae28fa4a95a4"
       },
+      "moment": {
+        "git": "https://github.com/acreeger/meteor-moment.git",
+        "tag": "v2.2.1",
+        "commit": "9ee12e714afe56b189f53076447b7b54f3012065"
+      },
+      "collection2": {
+        "git": "https://github.com/aldeed/meteor-collection2.git",
+        "tag": "v0.2.11",
+        "commit": "34ea61718c8826dfa9236222cec6c097bd41ae6b"
+      },
+      "handlebars-server": {
+        "git": "https://github.com/EventedMind/meteor-handlebars-server.git",
+        "tag": "v1.1.0",
+        "commit": "ed99c8e9280894519f44a5b4c84f66ff596c5450"
+      },
       "page-js-ie-support": {
         "git": "https://github.com/tmeasday/meteor-page-js-ie-support.git",
         "tag": "v1.3.5",
@@ -44,20 +50,15 @@
         "tag": "v4.0.0",
         "commit": "dc4965f1424cfca625ec3fbea17eace03f8e32c5"
       },
-      "Mesosphere": {
-        "git": "https://github.com/copleykj/Mesosphere.git",
-        "tag": "v0.1.1",
-        "commit": "0873e449f7cabb58986b05c9d2b7b3b64bd19a9f"
-      },
       "jquery-ui": {
         "git": "https://github.com/TimHeckel/meteor-jquery-ui.git",
         "tag": "v1.9.2",
         "commit": "c437d45edcf1367df8d5ffa8bad2867758030bd2"
       },
-      "underscore-string": {
-        "git": "https://github.com/possibilities/meteor-underscore-string.git",
-        "tag": "v2.2.0rc.1",
-        "commit": "dec21fac23310daf76dc19f246749e7beb48af03"
+      "simple-schema": {
+        "git": "https://github.com/aldeed/meteor-simple-schema.git",
+        "tag": "v0.2.10",
+        "commit": "64d41a9ec7f220ecc63d22a5f1056c5926651b82"
       }
     }
   }
