@@ -24,10 +24,10 @@
         arr = _.map arr, (elem)->
           return parseInt elem
         scheduledTime = moment()
-        # scheduledTime.set('hour', arr[0])
-        # scheduledTime.set('minute', arr[1])
-        # scheduledTime.set('second', arr[2])
-        scheduledTime.add('s', 5)
+        scheduledTime.set('hour', arr[0])
+        scheduledTime.set('minute', arr[1])
+        scheduledTime.set('second', arr[2])
+        # scheduledTime.add('s', 5)
         console.log scheduledTime
         if moment().isAfter scheduledTime
           scheduledTime = scheduledTime.add 'd', 1
