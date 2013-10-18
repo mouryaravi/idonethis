@@ -35,9 +35,10 @@ class @StatusEmail
     htmlStatusList = @buildHtmlStatusList status
 
     Email.send
-      to: 'ravi@pentaur.com',
-      from: 'status-tracker@pentaur.com',
-      subject: 'QA: Status for ' + new Date().toDateString()
+      to: 'ravi@pentaur.com'
+      cc: 'qa@pentaur.com'
+      from: 'status-tracker@pentaur.com'
+      subject: 'Pentaur QA: Status for ' + new Date().toDateString()
       html: Handlebars.templates['status-email']({date: new Date().toDateString(), statusList: htmlStatusList})
       text: textStatus
 
