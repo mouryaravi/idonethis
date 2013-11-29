@@ -4,7 +4,7 @@ Meteor.startup () ->
     end = moment()
     end.set 'y', 2020
     Reminders.insert 
-      'name': 'qa-status'
+      'name': 'qa'
       'time': '19:00:00'
       'end': end.toDate()
       createdAt: new Date()
